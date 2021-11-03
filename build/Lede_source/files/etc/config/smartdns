@@ -1,0 +1,204 @@
+
+config smartdns
+	option server_name 'smartdns'
+	option port '6053'
+	option tcp_server '1'
+	option serve_expired '1'
+	option redirect 'dnsmasq-upstream'
+	option rr_ttl '20'
+	option rr_ttl_min '300'
+	option rr_ttl_max '600'
+	option seconddns_port '6553'
+	option seconddns_tcp_server '1'
+	option seconddns_no_speed_check '0'
+	option seconddns_no_rule_addr '0'
+	option seconddns_no_rule_nameserver '0'
+	option seconddns_no_rule_ipset '0'
+	option seconddns_no_rule_soa '0'
+	option seconddns_no_dualstack_selection '0'
+	option seconddns_no_cache '0'
+	option force_aaaa_soa '0'
+	option coredump '0'
+	option ipv6_server '1'
+	option dualstack_ip_selection '1'
+	option prefetch_domain '1'
+	option cache_size '512'
+	option seconddns_enabled '1'
+	option seconddns_server_group 'FQ'
+	option enabled '1'
+	list old_redirect 'dnsmasq-upstream'
+	list old_port '6053'
+	list old_enabled '1'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '百度DNS'
+	option ip '180.76.76.76'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name '百度DNS'
+	option ip '180.76.76.76'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '阿里DNS'
+	option ip '223.5.5.5'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name '阿里DNS'
+	option ip '223.5.5.5'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '114DNS'
+	option ip '114.114.114.114'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name '114DNS'
+	option ip '114.114.114.114'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '中科大'
+	option ip '202.38.93.153'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name '中科大'
+	option ip '202.141.162.123'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name 'DNS派'
+	option ip '101.226.4.6'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name 'DNS派'
+	option ip '101.226.4.6'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '360DNS'
+	option ip '101.226.4.6'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name '360DNS'
+	option ip '101.226.4.6'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '中国互联网络中心'
+	option ip '1.2.4.8'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name '中国互联网络中心'
+	option ip '1.2.4.8'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
+	option name '谷歌DNS'
+	option ip '8.8.8.8'
+	option port '853'
+	option type 'tls'
+	option server_group 'FQ'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option name '谷歌DNS'
+	option ip '8.8.4.4'
+	option type 'tls'
+	option port '853'
+	option server_group 'FQ'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option name '谷歌DNS'
+	option ip 'tls://dns.google'
+	option port '853'
+	option type 'tls'
+	option no_check_certificate '0'
+	option server_group 'FQ'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option name 'oneDNS'
+	option ip '101.226.4.6'
+	option port '853'
+	option type 'tls'
+	option server_group 'FQ'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option name 'Cloudfiare'
+	option ip '1.1.1.1'
+	option port '853'
+	option type 'tls'
+	option server_group 'FQ'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '成都电信'
+	option ip '61.139.2.69'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name '成都电信'
+	option ip '61.139.2.69'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '成都电信'
+	option ip '202.98.96.68'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name '成都电信'
+	option ip '202.98.96.68'
+	option port '53'
+	option type 'tcp'
+
