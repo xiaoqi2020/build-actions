@@ -154,7 +154,7 @@ start() {
 
 stop() {
 	/usr/sbin/nginx -c $NGINX_CONFIG -s stop >/dev/null 2>&1 &
-	killall -9 php-fpm >/dev/null 2>&1 &
+	killall -9 php8-fpm >/dev/null 2>&1 &
 	rm -f /var/run/kodexplorer_php8-fpm.pid
 	rm -f /var/log/kodexplorer_php8-fpm.log
 	rm -f /var/run/php8-fpm.sock
