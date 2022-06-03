@@ -47,12 +47,13 @@ sed -i 's/"Argon 主题设置"/"Argon设置"/g' `grep "Argon 主题设置" -rl .
 
 
 # 整理固件包时候,删除您不想要的固件或者文件,让它不需要上传到Actions空间
-cat >${GITHUB_WORKSPACE}/Clear <<-EOF
-rm -rf config.buildinfo
-rm -rf feeds.buildinfo
-rm -rf openwrt-x86-64-generic-kernel.bin
-rm -rf openwrt-x86-64-generic.manifest
-rm -rf openwrt-x86-64-generic-squashfs-rootfs.img.gz
-rm -rf sha256sums
-rm -rf version.buildinfo
+cat >"$CLEAR_PATH" <<-EOF
+packages
+config.buildinfo
+feeds.buildinfo
+openwrt-x86-64-generic-kernel.bin
+openwrt-x86-64-generic.manifest
+openwrt-x86-64-generic-squashfs-rootfs.img.gz
+sha256sums
+version.buildinfo
 EOF
